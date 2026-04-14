@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-Build the static website from the copyright-history git repository.
+Build the website's data files from the copyright-history git repository.
 
-Walks the git history and extracts all data into JSON files that the
-frontend can load on demand. No external dependencies required.
+Walks the git history and extracts all data into JSON files under
+docs/data/ that the frontend loads on demand. The frontend itself
+(HTML/CSS/JS) lives directly under docs/ and is edited in place —
+this script only writes to docs/data/ and docs/.nojekyll.
 
 Usage:
     python3 build_site.py [--history-repo ~/code/copyright-history] [--output docs/]
@@ -13,7 +15,6 @@ import argparse
 import json
 import os
 import re
-import shutil
 import subprocess
 import sys
 
@@ -438,20 +439,6 @@ def main():
         with open(os.path.join(data_dir, 'diffs', f'{hash_}.json'), 'w') as f:
             json.dump(data, f, indent=1)
     print(f"  {len(diffs)} diffs")
-
-    # Copy static site files
-    site_src = os.path.join(workspace, 'site-src')
-    if os.path.isdir(site_src):
-        print("Copying frontend files...")
-        for item in os.listdir(site_src):
-            src = os.path.join(site_src, item)
-            dst = os.path.join(output, item)
-            if os.path.isdir(src):
-                if os.path.exists(dst):
-                    shutil.rmtree(dst)
-                shutil.copytree(src, dst)
-            else:
-                shutil.copy2(src, dst)
 
     # Write .nojekyll for GitHub Pages
     with open(os.path.join(output, '.nojekyll'), 'w') as f:
