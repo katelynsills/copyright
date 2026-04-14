@@ -99,6 +99,9 @@ const HomeView = {
         <p>${App.acts.length - 1} legislative acts from 1790 to 2025, each recorded as a git commit.
            Browse the timeline, explore individual sections, or compare versions side by side.</p>
         <a href="#/asof" class="asof-link">View the law at any date &rarr;</a>
+        <p class="hackathon-note">This is a research project created for the
+          <strong>2026 Stanford Law Hackathon</strong>. Not meant to be solely relied
+          on as a legal reference. Please double check with other sources.</p>
       </div>
 
       <div class="home-section">
