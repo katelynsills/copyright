@@ -1,0 +1,168 @@
+{
+ "hash": "0d3c082",
+ "act_name": "Satellite Television Extension Act of 2010",
+ "files": [
+  {
+   "path": "sections/101.md",
+   "hunks": [
+    {
+     "old_start": 1,
+     "new_start": 1,
+     "lines": [
+      {
+       "type": "ctx",
+       "text": "# 17 U.S.C. \u00a7 101"
+      },
+      {
+       "type": "ctx",
+       "text": ""
+      },
+      {
+       "type": "ctx",
+       "text": "\u00a7101. Definitions"
+      },
+      {
+       "type": "del",
+       "text": "Except as otherwise provided in this title, as used in this title, the following terms and their variant forms mean the following:"
+      },
+      {
+       "type": "add",
+       "text": "As used in this title, the following terms and their variant forms mean the following:"
+      },
+      {
+       "type": "ctx",
+       "text": "An \"anonymous work\" is a work on the copies or phonorecords of which no natural person is identified as author."
+      },
+      {
+       "type": "ctx",
+       "text": "An \"architectural work\" is the design of a building as embodied in any tangible medium of expression, including a building, architectural plans, or drawings. The work includes the overall form as well as the arrangement and composition of spaces and elements in the design, but does not include individual standard features."
+      },
+      {
+       "type": "ctx",
+       "text": "\"Audiovisual works\" are works that consist of a series of related images which are intrinsically intended to be shown by the use of machines, or devices such as projectors, viewers, or electronic equipment, together with accompanying sounds, if any, regardless of the nature of the material objects, such as films or tapes, in which the works are embodied."
+      }
+     ]
+    },
+    {
+     "old_start": 16,
+     "new_start": 16,
+     "lines": [
+      {
+       "type": "ctx",
+       "text": "A \"Copyright Royalty Judge\" is a Copyright Royalty Judge appointed under section 802 of this title, and includes any individual serving as an interim Copyright Royalty Judge under such section."
+      },
+      {
+       "type": "ctx",
+       "text": "A work is \"created\" when it is fixed in a copy or phonorecord for the first time; where a work is prepared over a period of time, the portion of it that has been fixed at any particular time constitutes the work as of that time, and where the work has been prepared in different versions, each version constitutes a separate work."
+      },
+      {
+       "type": "ctx",
+       "text": "A \"derivative work\" is a work based upon one or more preexisting works, such as a translation, musical arrangement, dramatization, fictionalization, motion picture version, sound recording, art reproduction, abridgment, condensation, or any other form in which a work may be recast, transformed, or adapted. A work consisting of editorial revisions, annotations, elaborations, or other modifications which, as a whole, represent an original work of authorship, is a \"derivative work\"."
+      },
+      {
+       "type": "del",
+       "text": "A \"device\", \"machine\", or \"process\" is one now known or later developed."
+      },
+      {
+       "type": "add",
+       "text": "A \"device\", \"machine\", or \"processs\" is one now known or later developed."
+      },
+      {
+       "type": "ctx",
+       "text": "A \"digital transmission\" is a transmission in whole or in part in a digital or other non-analog format."
+      },
+      {
+       "type": "ctx",
+       "text": "To \"display\" a work means to show a copy of it, either directly or by means of a film, slide, television image, or any other device or process or, in the case of a motion picture or other audiovisual work, to show individual images nonsequentially."
+      },
+      {
+       "type": "ctx",
+       "text": "An \"establishment\" is a store, shop, or any similar place of business open to the general public for the primary purpose of selling goods or services in which the majority of the gross square feet of space that is nonresidential is used for that purpose, and in which nondramatic musical works are performed publicly."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "sections/119.md",
+   "hunks": [
+    {
+     "old_start": 131,
+     "new_start": 131,
+     "lines": [
+      {
+       "type": "ctx",
+       "text": "(ii)(I) Within 10 days after publication in the Federal Register of a notice of the initiation of voluntary negotiation proceedings, parties who have reached a voluntary agreement may request that the royalty fees in that agreement be applied to all satellite carriers, distributors, and copyright owners without convening an arbitration proceeding pursuant to subparagraph (E)."
+      },
+      {
+       "type": "ctx",
+       "text": "(II) Upon receiving a request under subclause (I), the Librarian of Congress shall immediately provide public notice of the royalty fees from the voluntary agreement and afford parties an opportunity to state that they object to those fees."
+      },
+      {
+       "type": "ctx",
+       "text": "(III) The Librarian shall adopt the royalty fees from the voluntary agreement for all satellite carriers, distributors, and copyright owners without convening an arbitration proceeding unless a party with an intent to participate in the arbitration proceeding and a significant interest in the outcome of that proceeding objects under subclause (II)."
+      },
+      {
+       "type": "del",
+       "text": "(E) Period agreement is in effect.-The obligation to pay the royalty fees established under a voluntary agreement which has been filed with the Copyright Office in accordance with this paragraph shall become effective on the date specified in the agreement, and shall remain in effect until April 30, 2010, or in accordance with the terms of the agreement, whichever is later."
+      },
+      {
+       "type": "add",
+       "text": "(E) Period agreement is in effect.-The obligation to pay the royalty fees established under a voluntary agreement which has been filed with the Copyright Office in accordance with this paragraph shall become effective on the date specified in the agreement, and shall remain in effect until May 31, 2010, or in accordance with the terms of the agreement, whichever is later."
+      },
+      {
+       "type": "ctx",
+       "text": "(F) Fee set by compulsory arbitration.-"
+      },
+      {
+       "type": "ctx",
+       "text": "(i) Notice of initiation of proceedings.-On or before May 1, 2005, the Librarian of Congress shall cause notice to be published in the Federal Register of the initiation of arbitration proceedings for the purpose of determining the royalty fee to be paid for the secondary transmission of primary analog transmission of network stations and superstations under subsection (b)(1)(B) by satellite carriers and distributors"
+      },
+      {
+       "type": "ctx",
+       "text": "(I) in the absence of a voluntary agreement filed in accordance with subparagraph (D) that establishes royalty fees to be paid by all satellite carriers and distributors; or"
+      }
+     ]
+    },
+    {
+     "old_start": 175,
+     "new_start": 175,
+     "lines": [
+      {
+       "type": "ctx",
+       "text": "(13) Commercial establishment.-The term \"commercial establishment\"-"
+      },
+      {
+       "type": "ctx",
+       "text": "(A) means an establishment used for commercial purposes, such as a bar, restaurant, private office, fitness club, oil rig, retail store, bank or other financial institution, supermarket, automobile or boat dealership, or any other establishment with a common business area; and"
+      },
+      {
+       "type": "ctx",
+       "text": "(B) does not include a multi-unit permanent or temporary dwelling where private home viewing occurs, such as a hotel, dormitory, hospital, apartment, condominium, or prison."
+      },
+      {
+       "type": "del",
+       "text": "(e) Moratorium on Copyright Liability.-Until April 30, 2010, a subscriber who does not receive a signal of Grade A intensity (as defined in the regulations of the Federal Communications Commission under section 73.683(a) of title 47 of the Code of Federal Regulations, as in effect on January 1, 1999, or predicted by the Federal Communications Commission using the Individual Location Longley-Rice methodology described by the Federal Communications Commission in Docket No. 98-201) of a local network television broadcast station shall remain eligible to receive signals of network stations affiliated with the same network, if that subscriber had satellite service of such network signal terminated after July 11, 1998, and before October 31, 1999, as required by this section, or received such service on October 31, 1999."
+      },
+      {
+       "type": "add",
+       "text": "(e) Moratorium on Copyright Liability.-Until May 31, 2010, a subscriber who does not receive a signal of Grade A intensity (as defined in the regulations of the Federal Communications Commission under section 73.683(a) of title 47 of the Code of Federal Regulations, as in effect on January 1, 1999, or predicted by the Federal Communications Commission using the Individual Location Longley-Rice methodology described by the Federal Communications Commission in Docket No. 98-201) of a local network television broadcast station shall remain eligible to receive signals of network stations affiliated with the same network, if that subscriber had satellite service of such network signal terminated after July 11, 1998, and before October 31, 1999, as required by this section, or received such service on October 31, 1999."
+      },
+      {
+       "type": "ctx",
+       "text": "(f) Expedited Consideration by Justice Department of Voluntary Agreements to Provide Satellite Secondary Transmissions to Local Markets.-"
+      },
+      {
+       "type": "ctx",
+       "text": "(1) In general.-In a case in which no satellite carrier makes available, to subscribers located in a local market, as defined in section 122(j)(2), the secondary transmission into that market of a primary transmission of one or more television broadcast stations licensed by the Federal Communications Commission, and two or more satellite carriers request a business review letter in accordance with section 50.6 of title 28, Code of Federal Regulations (as in effect on July 7, 2004), in order to assess the legality under the antitrust laws of proposed business conduct to make or carry out an agreement to provide such secondary transmission into such local market, the appropriate official of the Department of Justice shall respond to the request no later than 90 days after the date on which the request is received."
+      },
+      {
+       "type": "ctx",
+       "text": "(2) Definition.-For purposes of this subsection, the term \"antitrust laws\"-"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

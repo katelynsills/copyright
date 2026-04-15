@@ -31,9 +31,9 @@
  },
  "101": {
   "title": "Definitions",
-  "amendment_count": 9,
+  "amendment_count": 17,
   "first_version": "Copyright Act of 1976",
-  "last_amended": "Copyright Royalty and Distribution Reform Act of 2004"
+  "last_amended": "Artistic Recognition for Talented Students Act of 2022 (ARTS Act)"
  },
  "1010": {
   "title": "Determination of certain disputes",
@@ -73,9 +73,9 @@
  },
  "106": {
   "title": "Exclusive rights in copyrighted works",
-  "amendment_count": 4,
+  "amendment_count": 5,
   "first_version": "Copyright Act of 1976",
-  "last_amended": "Technical Corrections to Title 17 Act of 1999"
+  "last_amended": "Technology, Education, and Copyright Harmonization Act of 2002 (TEACH Act)"
  },
  "106A": {
   "title": "Rights of certain authors to attribution and integrity",
@@ -199,7 +199,7 @@
  },
  "121": {
   "title": "Limitations on exclusive rights: Reproduction for blind or other people with disabilities",
-  "amendment_count": 4,
+  "amendment_count": 5,
   "first_version": "Legislative Branch Appropriations Act of 1997 (Chafee Amendment)",
   "last_amended": "Marrakesh Treaty Implementation Act of 2018"
  },
@@ -373,7 +373,7 @@
  },
  "501": {
   "title": "Infringement of copyright",
-  "amendment_count": 5,
+  "amendment_count": 6,
   "first_version": "Copyright Act of 1976",
   "last_amended": "Satellite Television Community Protection and Promotion Act of 2019"
  },
@@ -391,7 +391,7 @@
  },
  "504": {
   "title": "Remedies for infringement: Damages and profits",
-  "amendment_count": 7,
+  "amendment_count": 6,
   "first_version": "Copyright Act of 1976",
   "last_amended": "Copyright Cleanup, Clarification, and Corrections Act of 2010"
  },
@@ -439,9 +439,9 @@
  },
  "512": {
   "title": "Limitations on liability relating to material online",
-  "amendment_count": 1,
+  "amendment_count": 3,
   "first_version": "Digital Millennium Copyright Act of 1998 (DMCA)",
-  "last_amended": "Digital Millennium Copyright Act of 1998 (DMCA)"
+  "last_amended": "Copyright Cleanup, Clarification, and Corrections Act of 2010"
  },
  "513": {
   "title": "Determination of reasonable license fees for individual proprietors",
@@ -471,7 +471,7 @@
   "title": "The Copyright Office: General responsibilities and organization",
   "amendment_count": 5,
   "first_version": "Copyright Act of 1976",
-  "last_amended": "Satellite Television Community Protection and Promotion Act of 2019"
+  "last_amended": "Library of Congress Technical Corrections Act of 2019"
  },
  "702": {
   "title": "Copyright Office regulations",
@@ -531,7 +531,7 @@
   "title": "Proceedings of Copyright Royalty Judges",
   "amendment_count": 4,
   "first_version": "Copyright Act of 1976",
-  "last_amended": "Orrin G. Hatch-Bob Goodlatte Music Modernization Act of 2018"
+  "last_amended": "Library of Congress Technical Corrections Act of 2019"
  },
  "804": {
   "title": "Institution of proceedings",
