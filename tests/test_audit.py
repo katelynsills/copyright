@@ -758,6 +758,46 @@ class TestVersionStructure(unittest.TestCase):
         self.assertIn('sections/113.md', diff)
 
     @skip_if_no_repo
+    def test_dmca_commit_creates_512(self):
+        """The DMCA commit should create sections/512.md."""
+        dmca = commit_for('Digital Millennium Copyright Act')
+        files = git('ls-tree', '--name-only', f'{dmca}:sections')
+        self.assertIn('512.md', files.splitlines())
+
+    @skip_if_no_repo
+    def test_pl_106_44_commit_touches_512(self):
+        """PL 106-44 (Technical Corrections to Title 17 Act of 1999) made
+        three heading/capitalization edits to §512 subsecs (e), (e)(2),
+        and (j)(3). The commit must diff sections/512.md.
+
+        Regression class: prior to the fix in PR #10, the build pipeline
+        silently dropped this amendment because reconstruct.py couldn't
+        auto-reverse heading-case changes (data/snapshots/512-versions.json
+        marks the version auto_reversed:false), all four version texts
+        ended up identical, and prepare_build_data.py skipped the section.
+        Result: `git log -- sections/512.md` only showed the DMCA commit.
+        Same pattern affects 50+ other sections; this test guards §512
+        specifically.
+        """
+        pl = commit_for('Technical Corrections to Title 17 Act of 1999')
+        diff = git('diff', f'{pl}~1', pl, '--name-only')
+        self.assertIn('sections/512.md', diff)
+
+    @skip_if_no_repo
+    def test_pl_111_295_commit_touches_512(self):
+        """PL 111-295 (Copyright Cleanup, Clarification, and Corrections
+        Act of 2010) struck out ', in both electronic and hard copy
+        formats' from §512(c)(2). The commit must diff sections/512.md.
+
+        Same regression class as test_pl_106_44_commit_touches_512.
+        """
+        pl = commit_for(
+            'Copyright Cleanup, Clarification, and Corrections Act'
+        )
+        diff = git('diff', f'{pl}~1', pl, '--name-only')
+        self.assertIn('sections/512.md', diff)
+
+    @skip_if_no_repo
     def test_commits_chronological(self):
         """All commits in the output repo should be in chronological order
         by author date."""
