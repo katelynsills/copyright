@@ -68,3 +68,41 @@ These acts exist as commits in the repo but have empty `files_changed` in acts.j
 ### Remaining (identical snapshot text — needs manual version differentiation)
 - [ ] TEACH Act of 2002 (PL 107-273, Subtitle C) — snapshot files identical to Intellectual Property Technical Amendments (Subtitle B); both subtitles need distinct intermediate versions
 - [ ] Library of Congress Technical Corrections Act of 2019 (PL 116-94, Title XIV) — §802 snapshot identical to prior version (auto-reversal incomplete)
+
+## Testing Gaps Around Silently-Dropped Amendments
+
+PR #10 fixed §512 attribution for PL 106-44 (1999) and PL 111-295 (2010). Both amendments were listed in `data/amendment-notes/512-notes.md` and surfaced in `data/snapshots/512-versions.json` with `auto_reversed: false`, but because reconstruct.py couldn't reverse the heading-case changes and small strikeouts, all four version texts in the JSON came out byte-identical. `prepare_build_data.py` then wrote identical act-snapshots, and `build.py` produced empty diffs, so `git log -- sections/512.md` only showed the DMCA commit. The fix was a manual edit of two act-snapshot files; PR #10 also added three targeted regression tests in `tests/test_audit.py` (TestVersionStructure.test_dmca_commit_creates_512, test_pl_106_44_commit_touches_512, test_pl_111_295_commit_touches_512).
+
+### Why no test caught this
+- The existing per-act-touches-section assertions in `test_audit.py` are spot checks for famous acts only (Berne→§104, VARA→§113). No systematic rule of the form "every PL listed in `<section>-versions.json` must produce a commit touching that section file in the output repo."
+- Text-content tests in `test_sections_legal.py` and `test_audit.py` check the *content* of reconstructed text. When all four §512 versions were byte-identical, those tests still passed.
+- `test_pipeline.py` exercises pipeline functions as unit tests but doesn't go end-to-end. Nothing wired together "PL listed in amendment notes → version reconstructed → act-snapshot written → commit produced in output repo."
+
+### Same bug class likely affects 50+ other sections
+Survey (run from the repo root):
+
+```python
+import json, glob, os
+for f in sorted(glob.glob('data/snapshots/*-versions.json')):
+    sec = os.path.basename(f).replace('-versions.json', '')
+    fails = [v for v in json.load(open(f))['versions'] if v.get('auto_reversed') is False]
+    if fails:
+        print(f'{sec}: {len(fails)} failed')
+```
+
+Result: 53 sections with `auto_reversed: false` somewhere in their version chain, 142 failed reversals total. Highest counts: §119 (20), §101 (14), §114 (10), §111 (7), §110 (6). Each one is a candidate for the same silent-drop bug §512 had.
+
+### TODO
+- [ ] Add a systematic test that asserts: for every section S, for every public_law PL in `S-versions.json` (excluding the creation PL), the corresponding commit in copyright-history must touch `sections/S.md`. Pseudo:
+  ```python
+  for sec, data in all_section_versions:
+      for v in data['versions'][:-1]:  # skip final "current" entry
+          pl = v['public_law']
+          if not pl: continue
+          act_commit = commit_for_pl(pl)
+          diff = git('diff', f'{act_commit}~1', act_commit, '--name-only')
+          assert f'sections/{sec}.md' in diff
+  ```
+  Expect this test to fail for ~140 (section, PL) pairs initially. Use it as the punch list for follow-up manual reconstructions, the same way §512 was fixed.
+- [ ] For each of the 53 affected sections, audit which amendments are silently dropped and decide which need manual reconstruction (substantive changes) vs. which can be left flagged (purely typographical / numbering changes that don't matter for legal-research use cases).
+- [ ] Consider a `tests/test_attribution.py` that runs the systematic test above with the failing pairs in an `expectedFailures` list, so new regressions are caught while the existing backlog is worked down.
