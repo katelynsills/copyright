@@ -36,7 +36,7 @@ The Copyright Act of 1976 was the most sweeping change in the repository. It rep
 
 ```
 $ git diff v1909 v1976 --stat | tail -5
- 87 files changed, 2491 insertions(+), 475 deletions(-)
+  87 files changed, 1711 insertions(+), 509 deletions(-)
 ```
 
 87 files changed — the pre-1976 era files were removed and the modern section files were created.
@@ -52,16 +52,12 @@ $ git log --oneline v1976..v1998-dmca | wc -l
 
 ## Read the law at any point in time
 
-Want to know exactly what copyright law said in 1990, after the Architectural Works Act but before the Audio Home Recording Act? Check out that commit:
-
-```
-$ git checkout 69e7597
-```
+Want to know exactly what copyright law said on, say, June 1, 1991? Run `git rev-list -1 --before="1991-06-01" main` to get the commit for the most recent amendment as of that date, then `git show` or `git checkout` it.
 
 Now every file in `sections/` reflects the law as it existed at that moment. Browse freely, then return:
 
 ```
-$ git checkout main
+git checkout main
 ```
 
 ## Trace a single section from birth to present
@@ -70,11 +66,12 @@ Example: Section 107 (fair use), perhaps the most cited section in copyright law
 
 ```
 $ git log --oneline -- sections/107.md
-922771e Computer Software Rental Amendments Act of 1990
-383d0e5 Copyright Act of 1976
+be4fde3 Fair Use of Unpublished Works Act of 1992
+f12a20b Visual Artists Rights Act of 1990 (VARA)
+6d717db (tag: v1976) Copyright Act of 1976
 ```
 
-Fair use has been amended only once since the 1976 Act codified it. This is notable — one of the most litigated provisions in copyright law has been left almost entirely to judicial interpretation.
+Fair use has been amended only twice since the 1976 Act codified it. This is notable — one of the most litigated provisions in copyright law has been left almost entirely to judicial interpretation.
 
 ## Count amendments per section
 
@@ -92,7 +89,7 @@ This reveals which parts of the law Congress returns to most often — useful fo
 ## The first federal copyright law
 
 ```
-$ git show v1790 -- pre-1976/copyright-act-of-1790.md
+git show v1790 -- pre-1976/copyright-act-of-1790.md
 ```
 
-The Copyright Act of 1790 protected "maps, charts, and books" for 14 years with a 14-year renewal. Compare that to today's law — life of the author plus 70 years, covering everything from software to architectural works to vessel hull designs — and you can see the full arc of 236 years of legislative expansion in a single `git diff`.
+The Copyright Act of 1790 protected "maps, charts, and books" for 14 years with a 14-year renewal. Compare that to today's law — life of the author plus 70 years.
