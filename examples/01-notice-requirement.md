@@ -12,7 +12,7 @@ Although this project is about copyright, "What was the law at time X" can be ap
 >
 > — @an-elk.bsky.social, Apr 12, 2026, 23:39 PT — [link](https://bsky.app/profile/an-elk.bsky.social/post/3mjeaz2szls2n)
 
-Copyright has its own version of this question. Notice requirements, renewal rules, and statutory duration are all anchored to publication and creation dates that can reach back decades, if the statute of limitations doesn't apply (see note at bottom). The mechanic demonstrated below, using git to check out the statute as it stood at a specific moment, is the same regardless of what body of law the repository contains.
+Copyright has its own version of this question. Notice requirements, renewal rules, and statutory duration are all anchored to publication and creation dates that can reach back decades, if the statute of limitations doesn't apply. The mechanic demonstrated below, using git to check out the statute as it stood at a specific moment, is the same regardless of what body of law the repository contains.
 
 Similar tools exist: Westlaw's History tab (historical US Code from 1990, starting around $133/month for a solo-attorney single-state subscription) and HeinOnline (historical US Code from 1925, subscription pricing quote-based). This repository has every act back to 1790 and is free.
 
@@ -93,10 +93,6 @@ Whether the missing notice actually placed the photograph in the public domain d
 ---
 
 *Example reworked thanks to [this discussion](https://bsky.app/profile/questauthority.bsky.social/post/3mje3zpeyfm2p) ([continuation](https://bsky.app/profile/questauthority.bsky.social/post/3mje3zpeyfn2p)) and [this critique](https://bsky.app/profile/stzeitouni.bsky.social/post/3mjejrkftkc2f).*
-
-## Note on Statute-of-Limitations
-
-Statute-of-limitations doctrine has shifted recently. In 2024, the Supreme Court held in *Warner Chappell Music, Inc. v. Nealy* that damages in a copyright infringement suit are not capped at a three-year lookback. Where the discovery rule applies, a plaintiff can recover damages for infringement reaching back decades, provided the claim itself was filed within three years of discovery. Historical statutory lookup is newly relevant in those cases.
 
 ## Sources
 
