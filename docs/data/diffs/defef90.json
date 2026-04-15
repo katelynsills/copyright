@@ -1,0 +1,69 @@
+{
+ "hash": "defef90",
+ "act_name": "Protecting Lawful Streaming Act of 2020",
+ "files": [
+  {
+   "path": "amendments/2020-12-27-protecting-lawful-streaming-act-of-2020.md",
+   "hunks": [
+    {
+     "old_start": 0,
+     "new_start": 1,
+     "lines": [
+      {
+       "type": "add",
+       "text": "# Protecting Lawful Streaming Act of 2020"
+      },
+      {
+       "type": "add",
+       "text": ""
+      },
+      {
+       "type": "add",
+       "text": "*2020-12-27*"
+      },
+      {
+       "type": "add",
+       "text": ""
+      },
+      {
+       "type": "add",
+       "text": "**Public Law:** Pub. L. 116-260"
+      },
+      {
+       "type": "add",
+       "text": ""
+      },
+      {
+       "type": "add",
+       "text": "**Citation:** 134 Stat. 2177"
+      },
+      {
+       "type": "add",
+       "text": ""
+      },
+      {
+       "type": "add",
+       "text": "## Changes"
+      },
+      {
+       "type": "add",
+       "text": ""
+      },
+      {
+       "type": "add",
+       "text": "Added 18 U.S.C. Section 2319C, making it a felony to operate illicit digital transmission services that unlawfully transmit copyrighted works on a large scale. Did not amend Title 17 directly."
+      },
+      {
+       "type": "add",
+       "text": ""
+      },
+      {
+       "type": "add",
+       "text": "> [TODO] Apply text changes to section files."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
