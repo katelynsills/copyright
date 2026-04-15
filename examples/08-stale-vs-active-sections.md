@@ -1,5 +1,7 @@
 # Example 8: Finding Stale vs. Active Sections
 
+> ⚠️ **Under construction** — this example needs to be updated and tested.
+
 **Scenario**: A legislator wants to know which parts of copyright law are actively maintained and which parts haven't been touched in decades. This helps prioritize which sections may need modernization.
 
 ## Step 1: Count amendments per section
